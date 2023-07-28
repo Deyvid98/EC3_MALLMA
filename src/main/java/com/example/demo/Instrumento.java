@@ -13,15 +13,15 @@ import jakarta.persistence.Table;
 @Table(name = "instrumento")
 public class Instrumento {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    /*@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)*/
 
     private Integer id;
     private String nombre;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    /*@ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_categoria")
-    private Instrumento instrumento;
+    private Instrumento instrumento;*/
 
     public Integer getId() {
         return id;
@@ -35,12 +35,12 @@ public class Instrumento {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public Instrumento getInstrumento() {
+    /*public Instrumento getInstrumento() {
         return instrumento;
     }
     public void setInstrumento(Instrumento instrumento) {
-        this.instrumento = instrumento;
-    }
+        this.instrumento = instrumento; 
+    }*/
 
 
 }
