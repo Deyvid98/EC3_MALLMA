@@ -1,0 +1,6 @@
+
+
+
+@server = https://deyvid98-studious-guacamole-7v9rx477x659h4xw-8080.preview.app.github.dev
+
+GET {{server}}
