@@ -1,6 +1,24 @@
 
-
-
 @server = https://deyvid98-studious-guacamole-7v9rx477x659h4xw-8080.preview.app.github.dev
+@api = {{server}}/api/ec3
 
-GET {{server}}
+################ Categorias: ################
+###
+GET {{api}}/categorias
+###
+POST {{api}}/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos de Cuerda"}
+################ Instrumentos: ################
+###
+GET {{api}}/instrumentos
+###
+POST {{api}}/instrumentos
+Content-Type: application/json
+
+{"nombre": "Guitarra", "categoria": "http://localhost/api/ec3/categorias/1"}
+###
+GET {{api}}/instrumentos/1/categoria
+###
+GET {{api}}/instrumentos?sort=nombre,desc

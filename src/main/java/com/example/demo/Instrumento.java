@@ -1,11 +1,11 @@
 package com.example.demo;
 
-/*import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.CascadeType;*/
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
@@ -19,9 +19,9 @@ public class Instrumento {
     private Integer id;
     private String nombre;
 
-    /*@ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_categoria")
-    private Instrumento instrumento;*/
+    private Instrumento instrumento;
 
     public Integer getId() {
         return id;
@@ -35,12 +35,12 @@ public class Instrumento {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    /*public Instrumento getInstrumento() {
+    public Instrumento getInstrumento() {
         return instrumento;
     }
     public void setInstrumento(Instrumento instrumento) {
         this.instrumento = instrumento; 
-    }*/
+    }
 
 
 }
